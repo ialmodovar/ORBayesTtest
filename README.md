@@ -1,5 +1,5 @@
 # ORBayesTtest
-Objective and Robust Bayesian \\(t\\)-test
+Objective and Robust Bayesian $t$-test
 
 ## Authors:
 Israel Almodóvar-Rivera
