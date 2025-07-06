@@ -1,0 +1,15 @@
+Package: ORBayesTtest
+Type: Package
+Title: Objective and Robust Bayesian t test
+Version: 0.2.5
+Author: Israel A. Almodovar-Rivera
+Maintainer: Israel Almodovar-Rivera <israel.almodovar@upr.edu>
+Description: A Shiny-based app for hypothesis testing of the one sample and two sample with equal variances for mean comparisons
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports:
+    shiny,
+    readxl,
+    readODS,
+    openxlsx
+
