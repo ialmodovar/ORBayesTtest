@@ -6,7 +6,8 @@ Israel Almodóvar-Rivera
 
 ## Introduction
 
-Shiny app for Bayesian hypothesis testing using intrinsic and the Berger Robust prior, and the effective sample size (TESS) Bayesian Information Criterion. Bayes factor and posterior probabilities are reported.
+
+Student's $ t$-test has been over 100 years since the discovery of one of the most fundamental statistical tests: Student's $ t$-test. This shiny app employs the objective and robust Bayesian approach for hypothesis testing for one-sample and two-sample mean comparisons for the assumption of equal variances. Bayes factor and posterior probabilities are reported.
 
 ## Installation
 
