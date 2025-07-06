@@ -14,10 +14,10 @@ ORBayesTtest requires
 
 ```
 - R version 4.1.0 or higher.
-- R packages: shiny, reaxl, readODS, openxlsx
+- R packages: shiny, rmarkdown, reaxl, readODS, openxlsx
 ```
 
-This app can be run 
+The user can download the .Rmd file and run it on their local machine. This app can be run 
 
 ```R
 rmarkdown::run("OBayesTtest.Rmd")
