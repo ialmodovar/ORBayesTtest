@@ -6,7 +6,7 @@ Israel Almodóvar-Rivera
 
 ## Introduction
 
-Shiny app for Bayesian hypothesis testing using intrinsic and the Berger Robust prior, and The effective sample size (TESS) Bayesian Information Criterion. Bayes factor and posterior probabilities are reported
+Shiny app for Bayesian hypothesis testing using intrinsic and the Berger Robust prior, and the effective sample size (TESS) Bayesian Information Criterion. Bayes factor and posterior probabilities are reported.
 
 ## Installation
 
@@ -14,17 +14,20 @@ ORBayesTtest requires
 
 ```
 - R version 4.1.0 or higher.
-- R packages: shiny,shinythemes.
-- GSL - GNU Scientific Library
+- R packages: shiny, reaxl, readODS, openxlsx
 ```
 
-The package can be installed via the devtools package:
+This app can be run 
 
 ```R
-library("devtools")
-install_github("ialmodovar/SynClustR")
+rmarkdown::run("OBayesTtest.Rmd")
 ```
+
+## How to use
+
+This app enables users to upload a dataset with the variables of their choice or enter their values. The first row will be the names of the variables. The two-sample option allows the user to compare two columns, as well as compare the groups in a single column. I have included a tab for interpreting the Bayes Factors.
+
 
 ## Reference
 
-Almodóvar-Rivera, I., & Maitra, R. (2020). Kernel-estimated Nonparametric Overlap-Based Syncytial Clustering. J. Mach. Learn. Res., 21, 122-1.
+Almodóvar-Rivera, I.A.; Pericchi-Guerra, L.R. An Objective and Robust Bayes Factor for the Hypothesis Test: One Sample and Two Population Means. Entropy 2024, 26, 88. [https://doi.org/10.3390/e26010088 ](https://www.mdpi.com/1099-4300/26/1/88).
