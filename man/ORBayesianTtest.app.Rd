@@ -10,7 +10,7 @@ Run shiny app to compute the Bayes Factor based on the intrinsic, Jeffrey's and 
 ORBayesianTtest.app()
 }
 \value{
-Run Shiny App for objective and robust Bayesian t test.
+Run Shiny App for objective and robust Bayesian \eqn{t}-test.
 }
 \references{
 Almodóvar-Rivera, I. A., & Pericchi-Guerra, L. R. (2024). An objective and robust bayes factor for the hypothesis test one sample and two population means. Entropy, 26(1), 88.

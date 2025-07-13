@@ -55,8 +55,7 @@ ui <- function(){
                                   numericInput(inputId = "one.sample.mean",label = "Sample mean \\( \\bar{x}\\)",value = 0),
                                   numericInput(inputId = "one.sample.std",label = "Sample standard deviation \\( s\\)",value = 1),
                                   actionButton("run_one_sm", "Run one sample summary")
-                                  
-                 ),
+                                  ),
                ),
                mainPanel(
                  conditionalPanel(
@@ -353,7 +352,8 @@ two.vars <- eventReactive(input$run_two, {
     req(input$var1, input$var2)
     x <- data[[input$var1]]
     y <- data[[input$var2]]
-    levels_group <- c("Group 1", "Group 2")
+    levels_group <- c(input$var1, input$var2)
+#    levels_group <- c("Group 1", "Group 2")
   }
   
   list(x = as.numeric(x), y = as.numeric(y), group_labels = levels_group)
@@ -382,7 +382,7 @@ output$UItwo_sample <- renderUI({
       withMathJax(HTML(
         paste0(
           "<table class='table'>",
-          "<tr><th></th><th>Group 1</th><th>Group 2</th></tr>",
+          paste0("<tr><th></th><th>", two.vars()$group_labels[1], "</th><th>", two.vars()$group_labels[2], "</th></tr>"),
           "<tr><td>\\( \\bar{x} \\)</td><td>", round(m1, 3), "</td><td>", round(m2, 3), "</td></tr>",
           "<tr><td>\\( s \\)</td><td>", round(s1, 3), "</td><td>", round(s2, 3), "</td></tr>",
           "<tr><td>\\( n \\)</td><td>", n1, "</td><td>", n2, "</td></tr>",
