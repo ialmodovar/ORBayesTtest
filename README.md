@@ -28,9 +28,10 @@ To run this app
 
 ```R
 library("ORBayesTtest")
-ORBayesTtest()
+ORBayesianTtest()
 ## you can also try
-ORBayesTtest::ORBayesTtest()
+ORBayesTtest::ORBayesianTtest()
+## you can also run it in R as 
 ```
 
 ## How to use

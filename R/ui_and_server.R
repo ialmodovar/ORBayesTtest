@@ -17,7 +17,7 @@
 ui <- function(){
   fluidPage(
   withMathJax(),
-  titlePanel("Objective Bayesian \\(t\\)-test for one and two mean comparison"),
+  titlePanel("Objective and Robust Bayesian \\(t\\)-test for one and two mean comparison"),
   p(withMathJax("Student's \\(t\\) has been over 100 years since the discovery of one of the most fundamental statistical tests: the Student's \\(t\\) test. In this shiny app, employs the objective and robust Bayesian approach for hypothesis testing for one-sample and two-sample mean comparisons for the assumption of equal variances.")),
   tabsetPanel(
     tabPanel("Data",
@@ -77,10 +77,6 @@ ui <- function(){
              sidebarLayout(
                sidebarPanel(
                  uiOutput("var_select_two_sample_ui"),
-                 helpText("Parameters for Gonen (2005) Bayes Factor"),
-                 numericInput("lambda", label = withMathJax("\\(\\lambda\\): Effect size under \\( H_1 \\)"), value = 0, step = 0.1),
-                 numericInput("sigma2d", label = withMathJax("\\(\\sigma^2_d\\): Prior variance"), value = 1/3, step = 0.1),
-                 
                  actionButton("run_two", "Run Two Sample Test")
                ),
                mainPanel(
@@ -419,9 +415,7 @@ output$mean <- renderTable({
   two.sample.t.test.bf(two.vars()$x, two.vars()$y,
                        mu0 = as.numeric(input$mu0_two),
                        p0 = as.numeric(input$p0_two),
-                       paired = input$paired,
-                       lambda = input$lambda,
-                       sigma2d = input$sigma2d)
+                       paired = input$paired)
 }, rownames = TRUE, digits = 5)
 
 

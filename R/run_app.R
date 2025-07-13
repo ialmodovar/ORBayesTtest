@@ -2,7 +2,7 @@
 ##*
 ##* @file: run_app.R
 ##*
-##* Run ORBayesTtest as a R function
+##* Run ORBayesTtest.App to run Shiny App
 ##*
 ##* Author:
 ##* Israel Almodovar-Rivera PhD
@@ -13,6 +13,6 @@
 ##*********************************************
 
 
-ORBayesTtest <- function() {
-  shiny::shinyApp(ui = ui(), server = server)
+ORBayesianTtest.app <- function() {
+  shinyApp(ui = ui(), server = server)
 }

@@ -1,6 +1,6 @@
 Package: ORBayesTtest
 Type: Package
-Title: Objective and Robust Bayesian t test
+Title: Objective and Robust Bayesian t test for one and two-samples means
 Version: 0.2.5
 Author: Israel A. Almodovar-Rivera
 Maintainer: Israel Almodovar-Rivera <israel.almodovar@upr.edu>
