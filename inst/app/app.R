@@ -1,4 +1,2 @@
-library(shiny)
-library(ORBayesTtest)
 
-shinyApp(ui = ORBayesTtest::ui(), server = ORBayesTtest::server)
+shinyApp(ui = ui(), server = server)
